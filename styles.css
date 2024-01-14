@@ -1,0 +1,757 @@
+/* Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/************GENERAL ************/
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #ffffff;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* CABECERA */
+header {
+    color: #000000;
+    padding: 10px 250px;
+    background-color: #fff;
+}
+
+.icono {
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.icono:hover,
+ nav a:hover{
+    color:#000000; 
+    opacity: 0.5;
+}
+
+header a span {
+    font-size: 1.2em;
+}
+
+/* MENÚ */
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 20px 250px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); 
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a.active {
+    color: #DE2333;
+}
+
+/*ENLACES*/
+.fino {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+}
+
+.fino:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.nada {
+    color: #000;
+    text-decoration: none;
+}
+
+.italica {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.italica:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.mayuscula {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.mayuscula:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/*CITE*/
+cite{
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 20px 200px;
+    text-align: left;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.footernav a {
+    margin-right: 15px;
+    color: #fff;
+}
+
+.footernav li:not(:last-child)::after {
+    content: ' ·';
+}
+
+.redes-sociales {
+    margin-bottom: 30px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+h1 {
+    margin: 30px 0px;
+    font-size: 2.5em;
+}
+
+/***********************INDEX************************/
+
+/*  imagen de fondo */
+.hero-section {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 4em;
+}
+
+/* ¿Qué es la IA al día? */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.que-es-ia-al-dia>p {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+.al-dia,
+.al-dia img,
+.al-dia time,
+.al-dia h2,
+.al-dia h3,
+.al-dia p,
+.al-dia a {
+    margin: 20px;
+}
+
+body>*:not(header):not(nav):not(.hero-section):not(footer) {
+    margin: 50px 250px;
+}
+
+/*Al día */
+.al-dia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.al-dia h2 {
+    grid-column: span 3;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.al-dia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.al-dia time {
+    color: #555;
+    display: block;
+    margin-top: 10px;
+}
+
+.al-dia h3 {
+    margin-top: 10px;
+    color: rgb(222, 35, 51);
+}
+
+
+/*******************APLICACIONES****************/
+.aplicaciones-section {
+    margin: 50px ;
+}
+
+.aplicaciones-section ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.aplicaciones-section li {
+    list-style-type: none;
+    background-color: #F4F6F7;
+    overflow: hidden;
+}
+
+.aplicaciones-section li>* {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.aplicaciones-section li h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.aplicaciones-section li p {
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+/**************EN EL CINE*************/
+
+.en-el-cine-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    border:0; 
+}
+
+.video-container p {
+    background-color:#F4F6F7;
+    padding: 30px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.video-container p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+
+
+/************DESPACHO 42********/
+.despacho42 {
+    background-color: #F4F6F7;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.despacho42 img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+.despacho42 h2,
+.despacho42 p {
+    margin: 0;
+}
+
+.despacho42 h1 {
+    margin: 30px 0;
+    font-size: 2em;
+}
+
+.despacho42 p {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.despacho42-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.despacho42-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Formulario */
+.comentarios {
+    margin-top: 20px;
+}
+
+.comentarios h1,
+.comentarios p {
+    margin: 30px 0;
+}
+
+.comentarios label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.comentarios input[type="text"],
+.comentarios input[type="email"],
+.comentarios textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #F4F6F7;
+    border: none;
+}
+
+
+.comentarios button {
+    background-color: rgb(222, 35, 51);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+
+/* Artículos Recientes */
+.articulos-recientes {
+    position: absolute;
+    top: 180px;
+    right: 0.3px;
+}
+
+
+.articulos-recientes article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.articulos-recientes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.articulos-recientes .articulo-info {
+    flex: 1;
+}
+
+.articulos-recientes h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.articulos-recientes time {
+    color: #888;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+
+.article-image {
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.noticia-despacho {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.noticia {
+    width: 60%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.articulos-recientes {
+    width: 30%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.noticia ol {
+    list-style: none;
+
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.noticia ol li {
+    position: relative;
+    counter-increment: custom-counter;
+    margin-bottom: 10px;
+}
+
+.noticia ol li h3::before {
+    content: counter(custom-counter) ".";
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/*breadcrumb*/
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px 20px;
+    margin: 0;
+}
+
+.breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb li+li:before {
+    content: "> ";
+    padding: 1em;
+}
+
+.active2 {
+    color: rgb(222, 35, 51);
+    text-decoration: none;
+}
+
+
+
+
+
+/* Media Queries para móviles  */
+@media screen and (max-width: 767px) {
+
+    body>*:not(header):not(nav):not(.hero-section):not(footer) {
+        margin: 20px 20px;
+    }
+
+    .icono,
+    header,
+    .menu {
+        padding: 10px 20px;
+    }
+
+    .icono {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+
+    }
+
+    .footernav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .footernav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    .footernav li:not(:last-child)::after {
+        content: '';
+        display: none;
+    }
+
+    .redes-sociales {
+        margin-top: 20px;
+    }
+
+    .redes-sociales img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .que-es-ia-al-dia>p {
+        margin: 20px 20px;
+    }
+
+    .al-dia,
+    .al-dia img,
+    .al-dia time,
+    .al-dia h2,
+    .al-dia h3,
+    .al-dia p,
+    .al-dia a {
+        margin: 20px 20px;
+    }
+
+    .al-dia {
+        display: block;
+    }
+
+    .al-dia .imagen img {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .en-el-cine-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+    }
+
+    .video-container {
+        margin-bottom: 20px; 
+    }
+    .aplicaciones-section ol{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 0; 
+        padding: 0; 
+    }
+    .noticia,
+    .despacho42,
+    .comentarios,
+    .articulos-recientes {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    .articulos-recientes {
+        order: 4; 
+        position: relative; 
+        top: auto;
+    }
+    .despacho42 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .despacho42 img {
+        max-width: 20%;
+        width: auto;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body>*:not(header):not(nav):not(.hero-section):not(footer) {
+        margin: 20px 20px;
+        
+    }
+
+    .icono,
+    header,
+    .menu {
+        padding: 10px 20px;
+    }
+
+    .icono {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    .que-es-ia-al-dia > p {
+        margin: 10px 150px; 
+    }
+    .al-dia .imagen img {
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+
+    }
+
+    .footernav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .footernav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    .footernav li:not(:last-child)::after {
+        content: '';
+        display: none;
+    }
+
+    .redes-sociales {
+        margin-top: 20px;
+    }
+
+    .redes-sociales img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    .en-el-cine-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+    }
+
+    .video-container {
+        margin-bottom: 20px; 
+    }
+    .aplicaciones-section ol{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    .noticia,
+    .despacho42,
+    .comentarios,
+    .articulos-recientes {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .articulos-recientes {
+        order: 4; 
+        position: relative; 
+        top: auto; 
+    }
+    .despacho42 {
+        display: flex;
+        padding: 20px 10px;
+
+    }
+
+    .despacho42 img {
+        max-width: 100%; 
+        max-height: 80px;    
+    }
+    
+    
+}
